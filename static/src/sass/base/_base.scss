@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // (10px / 16px) * 100 = 62.5%;
+  line-height: 1.15;
+
+  @include respond(bp-large) {
+    // width < 1200?
+    font-size: 56.25%; // 1rem = 9px;
+  }
+
+  @include respond(bp-medium) {
+    // width < 1000?
+    font-size: 50%; // 1rem = 8px;
+  }
+
+  @include respond(bp-small) {
+    // width < 600?
+    font-size: 43.75%; // 1rem = 7px;
+  }
+
+  // @include respond(bp-desktop-abnormal) {
+  //   // width > 1600?
+  //   font-size: 68.75%; // 1rem = 11px;
+  // }
+
+  // @include respond(bp-desktop-mid) {
+  //   // width > 1800?
+  //   font-size: 75%; // 1rem = 12px;
+  // }
+
+  @include respond(bp-desktop-large) {
+    // width > 2560?
+    font-size: 87.5%; // 1rem = 14px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $main-font, sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: $text-color;
+}
+
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}

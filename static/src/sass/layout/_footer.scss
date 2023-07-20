@@ -1,0 +1,183 @@
+.footer {
+  background-color: $footer-back;
+
+  &__inner {
+    display: grid;
+    grid-template-areas: 'logo menu-left menu-right ex-menu contact';
+    --two-cols: calc(100% / 12 * 2);
+    --three-cols: calc(100% / 12 * 3);
+    grid-template-columns:
+      var(--two-cols) var(--two-cols) var(--two-cols) var(--three-cols)
+      var(--three-cols);
+
+    @include respond(bp-large) {
+      grid-template-areas:
+        'logo logo'
+        'menu-left contact'
+        'menu-right contact'
+        'ex-menu ex-menu';
+      grid-template-columns: 1fr 1fr;
+      max-width: 60rem;
+      margin: 0 auto;
+    }
+
+    @include respond(bp-small) {
+      padding: 4rem 0;
+      grid-template-areas:
+        'logo'
+        'menu-left'
+        'menu-right'
+        'contact'
+        'ex-menu';
+      grid-template-columns: 1fr;
+    }
+
+    color: $white-color;
+    padding: 5.2rem 0;
+    max-width: unset;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    margin-bottom: 1.6rem;
+
+    &-item {
+      align-self: center;
+    }
+
+    &-item-link {
+      color: $text-color !important;
+      transition: 0.3s all;
+
+      @include respond(bp-large) {
+        font-size: 1.6rem;
+      }
+
+      &:hover {
+        color: $white-color !important;
+      }
+    }
+  }
+
+  &__col--logo {
+    grid-area: logo;
+
+    @include respond(bp-large) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 3.5rem;
+    }
+  }
+
+  &__col--menu-left {
+    grid-area: menu-left;
+  }
+
+  &__col--menu-right {
+    grid-area: menu-right;
+  }
+
+  &__col--ex-menu {
+    grid-area: ex-menu;
+
+    @include respond(bp-large) {
+      text-align: center;
+      margin-top: 4.4rem;
+      padding-top: 4rem;
+      border-top: 1px solid $dark-color;
+    }
+
+    @include respond(bp-small) {
+      border-top: none;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
+
+  &__col--contact {
+    grid-area: contact;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.4rem;
+
+    @include respond(bp-small) {
+      justify-self: stretch;
+      padding: 4.2rem 0;
+      margin: 3.2rem 0;
+      border-top: 1px solid $dark-color;
+      border-bottom: 1px solid $dark-color;
+    }
+
+    @include respond(bp-small) {
+      & > div {
+        align-self: center;
+      }
+    }
+
+    a {
+      @include respond(bp-large) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__address {
+    font-size: 1.6rem;
+  }
+
+  &__contact-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 1.5rem;
+  }
+
+  &__contact-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 53px;
+    background-color: $main-color;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.3rem;
+      height: 4.3rem;
+    }
+  }
+
+  &__contact-icon {
+    width: 60%;
+    height: 60%;
+    fill: $white-color;
+  }
+
+  &__icon-hotel {
+    cursor: pointer;
+    max-width: 70%;
+    height: 8.6rem;
+    fill: $white-color;
+
+    @include respond(bp-large) {
+      width: 35%;
+      max-width: none;
+    }
+
+    @include respond(bp-medium) {
+      width: 22rem;
+    }
+
+    @include respond(bp-small) {
+      width: 17rem;
+    }
+  }
+}

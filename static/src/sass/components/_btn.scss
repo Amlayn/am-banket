@@ -1,0 +1,134 @@
+.main__btn {
+  color: $white-color !important;
+  padding: 1.2rem 5.9rem;
+  background-color: $accent-color;
+  border: 1px solid $accent-color;
+  transition: background-color 0.2s ease-out;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}
+
+.transparent__btn {
+  padding: 1.6rem 2rem;
+  width: 23rem;
+
+  color: $dark-color !important;
+  border: 1px solid $dark-color;
+  background-color: transparent;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  transition: 0.3s all;
+
+  @include respond(bp-large) {
+    padding: 1.8rem 2.2rem;
+    font-size: 1.8rem;
+    width: 38.8rem;
+  }
+
+  &:hover {
+    color: $accent-color !important;
+    border: 1px solid $accent-color;
+  }
+}
+
+.dropdown-btn {
+  display: none;
+
+  position: relative;
+  z-index: 100000;
+
+  width: 5rem;
+  height: 5rem;
+
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+
+  transition: 0.3s all cubic-bezier(0.06, 0.25, 0.37, 0.94);
+
+  &:hover {
+    // filter: drop-shadow(0 0 0.3rem $color-purple) contrast(1.5);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0) scale(0.95);
+  }
+
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 20px;
+    height: 2px;
+    background-color: $text-color;
+
+    content: '';
+    transition: 0.3s all ease-in;
+  }
+
+  @include respond(bp-medium) {
+    display: block;
+  }
+
+  %spanLine {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: $text-color;
+    transition: 0.3s all ease-in;
+  }
+
+  span {
+    &:after,
+    &:before {
+      content: '';
+    }
+
+    &:after {
+      @extend %spanLine;
+      transform: translate(-50%, 250%);
+    }
+
+    &:before {
+      @extend %spanLine;
+      transform: translate(-50%, -300%);
+    }
+  }
+
+  &--active span:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  &--active span:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  &--active:after {
+    transform: translate(100%, -50%);
+    opacity: 0;
+  }
+
+  &--active {
+    transform: scale(0.9);
+
+    &:hover {
+      transform: translateY(-1px) scale(0.88);
+    }
+
+    &:active {
+      transform: translateY(0) scale(0.86);
+    }
+  }
+}

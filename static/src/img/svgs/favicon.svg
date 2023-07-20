@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="53.98" y="88.32" width="1.86" height="12.02"/>
+  <rect class="cls-1" x="55.84" y="98.88" width="2.59" height="1.47"/>
+  <rect class="cls-1" x="62.45" y="88.32" width="1.91" height="12.02"/>
+  <rect class="cls-1" x="69.31" y="88.32" width="1.65" height="12.02"/>
+  <rect class="cls-1" x="73.53" y="88.32" width="1.7" height="12.02"/>
+  <polygon class="cls-1" points="70.96 88.77 73.53 95.87 73.53 99.98 70.96 93.3 70.96 88.77"/>
+  <rect class="cls-1" x="80.13" y="88.32" width="1.89" height="12.02"/>
+  <rect class="cls-1" x="82.01" y="88.32" width="2.59" height="1.65"/>
+  <rect class="cls-1" x="82.01" y="93.3" width="2.17" height="1.62"/>
+  <rect class="cls-1" x="82.01" y="98.88" width="2.91" height="1.47"/>
+  <polyline class="cls-1" points="6.57 81.75 27.89 27.78 30.67 27.78 51.89 81.75 49.43 81.75 29.23 30.45 9.08 81.75"/>
+  <polyline class="cls-1" points="11.6 81.75 29.57 36.53 31.08 39.46 14.16 81.75"/>
+  <polyline class="cls-1" points="16.79 81.75 32.19 42.71 33.39 45.91 19.61 81.75"/>
+  <polyline class="cls-1" points="21.81 81.75 34.76 49.16 35.91 52.56 24.43 81.75"/>
+  <polyline class="cls-1" points="32.76 63.62 40.99 63.62 41.88 65.98 32.08 65.98"/>
+  <polyline class="cls-1" points="31.08 68.44 42.98 68.44 43.77 70.58 30.25 70.58"/>
+  <polyline class="cls-1" points="28.26 75.35 45.65 75.35 44.76 73.05 29.23 73.05"/>
+  <polyline class="cls-1" points="54.45 81.75 33.08 27.78 35.67 27.78 57.01 81.75"/>
+  <polyline class="cls-1" points="59.43 81.75 38.19 27.78 40.78 27.78 61.99 81.75"/>
+  <polyline class="cls-1" points="64.59 81.75 43.38 27.78 45.73 27.78 64.12 74.44 64.59 74.43 64.59 27.78 67.18 27.78 67.17 28 66.95 32.7 66.95 81.75"/>
+  <polyline class="cls-1" points="88.17 67.83 85.58 67.83 66.95 32.67 67.18 27.78"/>
+  <polyline class="cls-1" points="69.31 81.75 69.08 40.24 71.67 44.49 71.67 81.77"/>
+  <polyline class="cls-1" points="73.83 49.16 76.38 53.48 76.37 81.77 73.78 81.75"/>
+  <polyline class="cls-1" points="78.5 58.17 81.1 62.43 81.1 81.77 78.5 81.75"/>
+  <polyline class="cls-1" points="70.02 27.78 72.6 27.78 93.58 67.83 90.79 67.83"/>
+  <polyline class="cls-1" points="75.22 27.78 77.78 27.78 97.36 65.01 97.84 65.01 117.28 27.78 120 27.78 117.64 32.46 99.02 67.83 96.19 67.83"/>
+  <polyline class="cls-1" points="106.59 27.78 109.15 27.78 94.44 55.69 93.13 53.39"/>
+  <polyline class="cls-1" points="112 27.78 114.55 27.78 97.12 60.73 95.84 58.5"/>
+  <polyline class="cls-1" points="103.5 61.95 105.85 57.93 105.85 81.77 103.5 81.77"/>
+  <polyline class="cls-1" points="108.21 52.75 110.55 48.74 110.55 81.75 108.21 81.77"/>
+  <polyline class="cls-1" points="112.92 44.05 115.28 40.02 115.28 81.77 112.92 81.77"/>
+  <polyline class="cls-1" points="117.64 32.46 120 27.78 120 81.77 117.64 81.75"/>
+</svg>

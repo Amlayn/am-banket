@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Банкетный зал</title>
+    <link
+      rel="shortcut icon"
+      href="./static/src/img/svgs/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./static/src\sass\main.css" />
+    <link rel="stylesheet" href="./static/src/sass/main.scss" />
+    <script type="module" defer src="./static/src/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__grid">
+          <div class="header__contact">
+            <a href="https://vk.com/" target="_blank">
+              <svg class="header__contact-icon">
+                <use xlink:href="./static/src/img/svgs/svgs.svg#icon_vk"></use>
+              </svg>
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+              <svg class="header__contact-icon">
+                <use xlink:href="./static/src/img/svgs/svgs.svg#icon_whatsapp"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="header__tel">
+            <a href="tel:+79385199973">+79385199973</a>
+          </div>
+
+          <div class="header__logo scroll--smooth">
+            <!-- <a href="/"> -->
+            <div class="header__hero-title">
+              <h2>Санторини</h2>
+            </div>
+            <!-- </a> -->
+          </div>
+
+          <div class="header__btns">
+            <a class="header__btn main__btn" href="#" onclick="showForm()"
+              >Заказать</a
+            >
+          </div>
+
+          <div class="header__menu">
+            <nav class="menu-header-container">
+              <ul class="header__menu-list header__menu-list--main">
+                <li class="header__menu-item">
+                  <a href="#description" onclick="return false;">Описание</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#contacts" onclick="return false;">Контакты</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#backcall" onclick="return false;">Обратная связь</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="" class="photo">Фото</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#price_store" onclick="return false;">Цены</a>
+                </li>
+              </ul>
+
+              <ul
+                class="header__menu-list header__menu-list--additional hidden"
+              >
+                <li class="header__menu-item">
+                  <a href="#" onclick="return false;">SOME LINK</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#" onclick="return false;">SOME LINK</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#" onclick="return false;">SOME LINK</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#" onclick="return false;">SOME LINK</a>
+                </li>
+
+                <li class="header__menu-item">
+                  <a href="#" onclick="return false;">SOME LINK</a>
+                </li>
+                <div class="header__address hidden">
+                  <div>г. Краснодар</div>
+                  <div>ул. Зиповская, 5/7; 350072</div>
+                </div>
+                <div class="header__contact--additional hidden">
+                  <a href="https://vk.com/" target="_blank">
+                    <svg class="header__contact-icon">
+                      <use xlink:href="./static/src/img/svgs/svgs.svg#icon_vk"></use>
+                    </svg>
+                  </a>
+                  <a href="https://www.whatsapp.com/" target="_blank">
+                    <svg class="header__contact-icon">
+                      <use
+                        xlink:href="./static/src/img/svgs/svgs.svg#icon_whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </div>
+              </ul>
+            </nav>
+          </div>
+
+          <button class="header__dropdown-btn dropdown-btn">
+            <span></span>
+          </button>
+        </div>
+        <!-- ./header__grid -->
+
+        <div class="header__hero">
+          <h2 class="header__hero-title">Банкетный зал</h2>
+          <h3 class="header__hero-subtitle">
+            Изящное пространство для любых мероприятий
+          </h3>
+        </div>
+        <!-- ./header__hero -->
+      </div>
+    </header>
+
+    <section class="description-section">
+      <div class="container">
+        <h3 id="description" class="title">Торжества с размахом</h3>
+        <p class="paragraph description__paragraph">
+          От современной городской свадьбы до корпоративного вечера — любое
+          мероприятие пройдёт идеально в банкетном зале.
+        </p>
+      </div>
+    </section>
+
+    <section class="testimonials-banquet">
+      <div class="container">
+        <div class="">
+          <h3 class="title">Банкетный зал</h3>
+          <p class="paragraph testimonials-banquet__paragraph">
+            Просторное помещение, с панорамными окнами и дизайнерской мебелью,
+            трансформирующееся под формат события, будь то камерная свадьба или
+            шумный корпоратив.
+          </p>
+        </div>
+        <ul class="testimonials-banquet__list">
+          <li class="testimonials-banquet__item">
+            <div class="testimonials-banquet__round">
+              <svg class="testimonials-banquet__icon">
+                <use xlink:href="./static/src/img/svgs/svgs.svg#icon_users"></use>
+              </svg>
+            </div>
+            <p class="testimonials-banquet__title">До 300 гостей</p>
+          </li>
+          <li class="testimonials-banquet__item">
+            <div class="testimonials-banquet__round">
+              <svg class="testimonials-banquet__icon">
+                <use xlink:href="./static/src/img/svgs/svgs.svg#icon_maximize"></use>
+              </svg>
+            </div>
+            <p class="testimonials-banquet__title">110 квадратных метров</p>
+          </li>
+          <li class="testimonials-banquet__item">
+            <div class="testimonials-banquet__round">
+              <svg class="testimonials-banquet__icon">
+                <use xlink:href="./static/src/img/svgs/svgs.svg#icon_video"></use>
+              </svg>
+            </div>
+            <p class="testimonials-banquet__title">Своя аппаратура</p>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section class="banquet-slider">
+      <div class="photo_1" class="container swiper-container">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet1.jpg"
+                  alt="Banquet 1"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet2.jpg"
+                  alt="Banquet 2"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet3.jpg"
+                  alt="Banquet 3"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet4.jpg"
+                  alt="Banquet 4"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet5.jpg"
+                  alt="Banquet 5"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet6.jpg"
+                  alt="Banquet 6"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-zoom-container">
+                <img
+                  src="./static/src/img/slider banquet/banquet7.jpg"
+                  alt="Banquet 7"
+                  loading="lazy"
+                />
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <!-- ./swiper -->
+      </div>
+    </section>
+
+    <section class="banquet-slider_">
+      <h2 id="price_store" class="title triple-pic__title" style="text-align: center">Цены и услуги</h2>
+      <div class="container swiper-container_price">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper_price">
+            <!-- Slides -->
+            <div class="swiper-slide_price">
+              <div class="swiper-zoom-container">
+                <h2 class="price_h1" style="text-align: center">2299₽</h2>
+                <br />
+                <p class="price_p1" style="text-align: center">
+                  С 1-го.
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_price">
+              <div class="swiper-zoom-container">
+                <h2 class="price_h1" style="text-align: center">4599₽</h2>
+                <br />
+                <p class="price_p1" style="text-align: center">
+                  С 2-ух.
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_price">
+              <div class="swiper-zoom-container">
+                <h2 class="price_h1" style="text-align: center">6899₽</h2>
+                <br />
+                <p class="price_p1" style="text-align: center">
+                  с 3-ех.
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="triple-pic triple-pic--wedding">
+      <div class="container">
+        <div class="triple-pic__inner">
+          <h2 class="title triple-pic__title" style="text-align: center;">
+            Календарь бронирования
+          
+
+          <div style="position: absolute" class="triple-pic__right">
+            <div style="text-align: center" class="triple-pic__text">
+              <iframe
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FMoscow&title=%D0%9A%D0%B0%D0%BB%D0%B5%D0%BD%D0%B4%D0%B0%D1%80%D1%8C%20%D0%B1%D1%80%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20&showNav=1&showPrint=0&showTabs=0&showCalendars=0&showTz=1&src=M2M1ZmI5ZjE5YmQ4YTc0MTU4YjkzZjQ0MTRjNzhkZmQwZmIyZjFlM2Q4YWNkYjdjNjcyODViZmNmY2JiOTgyZEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23009688"
+              style="border-width: 0"
+              width="1150"
+              height="500"
+              frameborder="0"
+              scrolling="no"
+            ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <section class="banquet-slider_">
+      <h2 class="title triple-pic__title" style="text-align: center">Отзывы</h2>
+      <div class="container swiper-container_raiting">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper_rating">
+            <!-- Slides -->
+            <div class="swiper-slide_rating">
+              <div class="swiper-zoom-container">
+                <h2 class="rating_h1" style="text-align: center">Иван</h2>
+                <br />
+                <p class="rating_p1" style="text-align: center">
+                  Было здорово! Очень вкусно и уютная атмосфера!
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_rating">
+              <div class="swiper-zoom-container">
+                <h2 class="rating_h1" style="text-align: center">Ольга</h2>
+                <br />
+                <p class="rating_p1" style="text-align: center">
+                  Отличное обслуживание! Все было на высшем уровне!
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_rating">
+              <div class="swiper-zoom-container">
+                <h2 class="rating_h1" style="text-align: center">Александр</h2>
+                <br />
+                <p class="rating_p1" style="text-align: center">
+                  Праздновали день рождение друга в вашем ресторане. Все
+                  остались очень довольны!
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_rating">
+              <div class="swiper-zoom-container">
+                <h2 class="rating_h1" style="text-align: center">Наталья</h2>
+                <br />
+                <p class="rating_p1" style="text-align: center">
+                  Блюда были просто потрясающие! Спасибо шеф-повару!
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+            <div class="swiper-slide_rating">
+              <div class="swiper-zoom-container">
+                <h2 class="rating_h1" style="text-align: center">Сергей</h2>
+                <br />
+                <p class="rating_p1" style="text-align: center">
+                  Спасибо за прекрасное время! Ваш ресторан - это лучший выбор
+                  для торжества!
+                </p>
+              </div>
+              <div class="swiper-lazy-preloader"></div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev_rating"></div>
+          <div class="swiper-button-next_rating"></div>
+        </div>
+        <!-- ./swiper -->
+      </div>
+    </section></h2><br>
+
+    <section class="triple-pic triple-pic--wedding">
+      <div class="container">
+        <div class="triple-pic__inner">
+          <h2 class="title triple-pic__title" style="text-align: center;">
+            Карта
+          
+
+          <div style="position: absolute" class="triple-pic__right">
+            <div style="text-align: center" class="triple-pic__text">
+              <script
+                type="text/javascript"
+                charset="utf-8"
+                async
+                style="text-align: center"
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2218e2be7b8c09fafb891bc92d507f1a64f3c37253ed5ea673ed5fb290fee0de&amp;width=1280&amp;height=650&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+              <form class="feedback__form" action="/">
+                <div class="swiper-zoom-container_bro">
+                  
+                  <img
+                    class="close_form"
+                    src="./static/src/img/svgs/Group 1.svg"
+                    alt="Крест"
+                    loading="lazy_"
+                  />
+                </div>
+
+                <div class="feedback__form-input-group">
+                  <input
+                    class="feedback__form-input"
+                    type="text"
+                    name="name"
+                    required
+                  />
+                  <label class="feedback__form-input-label">Имя</label>
+                </div>
+
+                <div class="feedback__form-input-group">
+                  <input
+                    class="feedback__form-input"
+                    type="tel"
+                    name="tel"
+                    required
+                  />
+                  <label class="feedback__form-input-label"
+                    >Номер телефона *</label
+                  >
+                </div>
+
+                <div class="feedback__form-input-group">
+                  <textarea
+                    class="feedback__form-input-textarea"
+                    placeholder="Ваш вопрос"
+                    name="question"
+                    required
+                  ></textarea>
+                </div>
+
+                <div
+                  class="feedback__form-input-group feedback__checkbox-container"
+                >
+                  <input
+                    class="feedback__form-input-checkbox"
+                    type="checkbox"
+                    id="check-1"
+                  />
+                  <label
+                    for="check-1"
+                    class="feedback__form-input-checkbox-label"
+                    >Соглашаюсь на
+                    <a href="#" onclick="return false;"
+                      >обработку персональных данных</a
+                    ></label
+                  >
+                </div>
+
+                <button
+                  class="main__btn feedback__btn"
+                  type="submit"
+                  
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div><br><br><br><br><br>
+
+         
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__col--logo">
+            <!-- <a class="footer__link" href="/"> -->
+            <svg class="footer__icon-hotel scroll--smooth">
+              <use xlink:href="./static/src/img/svgs/svgs.svg#icon_hotel"></use>
+              <p class="am-layn">© АМ-ЛАЙН 2023 - 2023</p>
+              <p class="am-layn_security">Все права защищены.</p>
+            </svg>
+            <!-- </a> -->
+          </div>
+          <!-- ./foooter__col--logo -->
+
+          <div class="footer__col--menu-left">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-item-link"
+                    href="#"
+                    onclick="return false;"
+                    >Политика конфиденциальности</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- ./footer__col--menu-left -->
+
+          <div class="footer__col--menu-right">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-item-link"
+                    href="#"
+                    onclick="return false;"
+                    >Контакты</a
+                  >
+                </li>
+
+                <li class="footer__menu-item">
+                  <a
+                    class="footer__menu-item-link"
+                    href="#"
+                    onclick="return false;"
+                    >Обратная связь</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- ./footer__col--menu-right -->
+
+          <div class="footer__col--ex-menu">
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="footer__menu-item">
+                  <p id="contacts_1" class="footer__menu-item-link">График</p>
+                </li>
+
+                <li class="footer__menu-item">
+                  <p class="footer__menu-item-link">9:00 - 0:00</p>
+                </li>
+                <li class="footer__menu-item">
+                  <p class="footer__menu-item-link">Без выходных</p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- ./footer__col--ex-menu -->
+
+          <div class="footer__col--contact">
+            <div class="footer__tel">
+              <a href="tel:+79385199973">+79385199973</a>
+            </div>
+
+            <div class="footer__address">
+              <div>г. Краснодар</div>
+              <div>ул. Зелёная, 258; 353217</div>
+            </div>
+
+            <div class="footer__contact">
+              <ul class="footer__contact-list">
+                <li class="footer__contact-item">
+                  <a href="#" onclick="return false;"
+                    ><svg class="footer__contact-icon">
+                      <use xlink:href="./static/src/img/svgs/svgs.svg#icon_vk"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="footer__contact-item">
+                  <a href="#" onclick="return false;">
+                    <svg class="footer__contact-icon">
+                      <use
+                        xlink:href="./static/src/img/svgs/svgs.svg#icon_whatsapp"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- ./footer__contact -->
+          </div>
+          <!-- ./footer__col--contact -->
+        </div>
+        <!-- ./footer__inner -->
+      </div>
+    </footer>
+    <script src="./static/src/js/mail_form.js"></script>
+    <script src="./static/src/js/form.js"></script>
+    <script src="./static/src/js/scroll.js"></script>
+    <script src="./static/src/js/scroll_contacts.js"></script>
+    <script src="./static/src/js/scroll_photo.js"></script>
+    <script src="./static/src/js/scroll_price.js"></script>
+
+  </body>
+  <script>
+    const btn = document.querySelector(".header__btn");
+    const form = document.querySelector(".feedback__form");
+
+    btn.addEventListener("click", () => {
+      form.classList.remove("element--hidden");
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      // Здесь можете добавить логику отправки формы на сервер
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".swiper-wrapper").slick({
+        slidesToShow: 1,
+        slidesPerView: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        arrows: true,
+        prevArrow:
+          '<button style="position: absolute; z-index: 1000;" type="button" class="slick-prev"><img src="./static/src/img/arrow/Arrow_left.svg"/></button>',
+        nextArrow:
+          '<button style="left: 94%" type="button" class="slick-next"><img src="./static/src/img/arrow/Arrow_right.svg"/></button>',
+      });
+    });
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $(".swiper-wrapper_rating").slick({
+        slidesToShow: 1,
+        slidesPerView: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        arrows: true,
+        prevArrow:
+          '<button style="position: absolute; z-index: 1000;" type="button" class="slick-prev_rating"><img src="./static/src/img/arrow/Arrow_left.svg"/></button>',
+        nextArrow:
+          '<button style="left: 94%" type="button" class="slick-next_rating"><img src="./static/src/img/arrow/Arrow_right_.svg"/></button>',
+      });
+    });
+  </script>
+
+
+<script>
+  $(document).ready(function () {
+    $(".swiper-wrapper_price").slick({
+      slidesToShow: 1,
+      slidesPerView: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 10000,
+      arrows: true,
+      prevArrow:
+        '<button style="position: absolute; z-index: 1000;" type="button" class="slick-prev_price"><img src="./static/src/img/arrow/Arrow_left.svg"/></button>',
+      nextArrow:
+        '<button style="left: 94%" type="button" class="slick-next_price"><img src="./static/src/img/arrow/Arrow_right_.svg"/></button>',
+    });
+  });
+</script>
+
+
+
+  <script>
+    var feedbackWrapper = document.querySelector('.feedback__wrapper');
+    window.addEventListener('scroll', function() {
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    feedbackWrapper.style.bottom = 20 - scrollTop + 'px';
+    });
+
+  </script>
+
+  
+</html>

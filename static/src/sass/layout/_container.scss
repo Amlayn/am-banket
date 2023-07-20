@@ -1,0 +1,23 @@
+.container {
+  max-width: min(100%, 120rem);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include respond(bp-large) {
+    max-width: 100%;
+  }
+
+  // @include respond(bp-desktop-mid) {
+  //   max-width: min(100%, 130rem);
+  // }
+  @include respond(bp-desktop-large) {
+    max-width: min(100%, 140rem);
+  }
+}
+
+.container-no-center {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
